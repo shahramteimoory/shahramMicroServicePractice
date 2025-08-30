@@ -1,21 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using OrderService.Infrastructure.Context;
 using OrderService.MessagingBus;
 using OrderService.MessagingBus.RecivedMessage;
 using OrderService.Model.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using OrderService.Model.Services.MessagesDto;
+using OrderService.Model.Services.ProductServices;
+using OrderService.Model.Services.RegisterOrderServices;
 
 namespace OrderService
 {
@@ -38,7 +34,7 @@ namespace OrderService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OrderService", Version = "v1" });
             });
             services.AddDbContext<OrderDataBaseContext>(o => o.UseSqlServer
-                (Configuration["OrderConnection"]));
+                (Configuration["OrderConnection"]),ServiceLifetime.Singleton);
 
             services.AddTransient<IOrderService, OrderService.Model.Services.OrderService>();
 
@@ -46,6 +42,12 @@ namespace OrderService
 
 
             services.AddHostedService<RecivedOrderMessage>();
+
+            services.AddTransient<IProductServices, ProductService>();
+
+            services.AddTransient<IRegisterOrderService, RegisterOrderService>();
+
+            services.AddTransient<RabbitMQBus<SendOrderToPaymentMessage>, RabbitMQOrderToPaymentMessageBus>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

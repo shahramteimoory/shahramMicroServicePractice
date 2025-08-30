@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OrderService.Constants;
 using OrderService.Infrastructure.Context;
-using OrderService.Model.Entities;
+using OrderService.MessagingBus;
+using OrderService.Model.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace OrderService.Model.Services
 {
@@ -13,16 +14,19 @@ namespace OrderService.Model.Services
 
         List<OrderDto> GetOrdersForUser(string UserId);
         OrderDetailDto GetOrderById(Guid Id);
+        ResultDto RequestPayment(Guid orderId);
     }
 
 
     public class OrderService : IOrderService
     {
         private readonly OrderDataBaseContext context;
+        private readonly RabbitMQBus<SendOrderToPaymentMessage> rabbitMQBus;
 
-        public OrderService(OrderDataBaseContext context)
+        public OrderService(OrderDataBaseContext context, RabbitMQBus<SendOrderToPaymentMessage> rabbitMQBus)
         {
             this.context = context;
+            this.rabbitMQBus = rabbitMQBus;
         }
 
         public OrderDetailDto GetOrderById(Guid Id)
@@ -44,6 +48,7 @@ namespace OrderService.Model.Services
                 UserId = orders.UserId,
                 OrderPaid = orders.OrderPaid,
                 OrderPlaced = orders.OrderPlaced,
+                TotalPrice = orders.TotalPrice,
                 OrderLines = orders.OrderLines.Select(ol => new OrderLineDto
                 {
                     Id = ol.Id,
@@ -73,40 +78,33 @@ namespace OrderService.Model.Services
             }).ToList();
             return orders;
         }
-    }
 
+        public ResultDto RequestPayment(Guid orderId)
+        {
+            var order = context.Orders.FirstOrDefault(x => x.Id == orderId);
+            if (order is null)
+            {
+                return new ResultDto
+                {
+                    Message = "موردی یافت نشد"
+                };
+            }
+            var message = new SendOrderToPaymentMessage()
+            {
+                Amount=order.TotalPrice,
+                OrderId=order.Id
+            };
 
+            rabbitMQBus.SendMessage(message, QueNames.OrderSendToPayment);
 
-    public class OrderDto
-    {
-        public Guid Id { get; set; }
-        public int ItemCount { get; set; }
-        public int TotalPrice { get; set; }
-        public bool OrderPaid { get; set; }
-        public DateTime OrderPlaced { get; set; }
+            order.RequestPayment();
+            context.SaveChanges();
 
-    }
-
-
-    public class OrderDetailDto
-    {
-        public Guid Id { get; set; }
-        public string UserId { get; set; }
-        public DateTime OrderPlaced { get; set; }
-        public bool OrderPaid { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public string PhoneNumber { get; set; }
-        public List<OrderLineDto> OrderLines { get; set; }
-
-    }
-
-    public class OrderLineDto
-    {
-        public Guid Id { get; set; }
-        public int Quantity { get; set; }
-        public string Name { get; set; }
-        public int Price { get; set; }
+            return new ResultDto
+            {
+                IsSuccess = true,
+                Message = "درخواست پرداخت ثبت شد"
+            };
+        }
     }
 }

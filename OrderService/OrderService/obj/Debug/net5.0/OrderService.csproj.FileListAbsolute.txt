@@ -65,3 +65,4 @@ E:\MicroServiceProjects\OrderService\OrderService\obj\Debug\net5.0\refint\OrderS
 E:\MicroServiceProjects\OrderService\OrderService\obj\Debug\net5.0\OrderService.pdb
 E:\MicroServiceProjects\OrderService\OrderService\obj\Debug\net5.0\OrderService.genruntimeconfig.cache
 E:\MicroServiceProjects\OrderService\OrderService\obj\Debug\net5.0\ref\OrderService.dll
+E:\MicroServiceProjects\OrderService\OrderService\obj\Debug\net5.0\OrderService.sourcelink.json

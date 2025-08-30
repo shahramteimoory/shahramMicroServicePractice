@@ -8,4 +8,10 @@ namespace OrderService.MessagingBus
         public DateTime CreateTime { get; set; } = DateTime.Now;
 
     }
+
+    public class SendOrderToPaymentMessage: BaseMessage
+    {
+        public Guid OrderId { get; set; }
+        public int Amount { get; set; }
+    }
 }

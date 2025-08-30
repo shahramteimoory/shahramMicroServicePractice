@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OrderService.Model.Entities
 {
@@ -17,6 +15,7 @@ namespace OrderService.Model.Entities
         public string Address { get; private set; }
         public string PhoneNumber { get; private set; }
         public int TotalPrice { get; set; }
+        public OrderStatus PaymentStatus { get; private set; }
 
         public ICollection<OrderLine> OrderLines { get; private set; }
 
@@ -37,8 +36,28 @@ namespace OrderService.Model.Entities
             this.Address = Address;
             this.PhoneNumber = PhoneNumber;
             this.TotalPrice = TotalPrice;
+            this.PaymentStatus = OrderStatus.unPaid;
         }
         public Order() { }
+
+        public void RequestPayment()
+        {
+            PaymentStatus = OrderStatus.RequestPayment;
+        }
+
+        public void PaymentIsDone()
+        {
+            OrderPaid = true;
+            PaymentStatus = OrderStatus.isPaid;
+        }
+    }
+
+    public enum OrderStatus
+    {
+        unPaid,
+        RequestPayment,
+        isPaid,
+
     }
 
 

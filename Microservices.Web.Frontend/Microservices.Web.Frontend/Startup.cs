@@ -1,5 +1,7 @@
 using Microservices.Web.Frontend.Services.BasketServices;
 using Microservices.Web.Frontend.Services.DiscountServices;
+using Microservices.Web.Frontend.Services.OrderServices;
+using Microservices.Web.Frontend.Services.PaymentServices;
 using Microservices.Web.Frontend.Services.ProductServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,6 +50,18 @@ namespace Microservices.Web.Frontend
             {
                 return new BasketService(
                     new RestClient(Configuration["MicroservicAddress:Basket:Uri"]));
+            }); 
+            
+            services.AddScoped<IOrderService>(p =>
+            {
+                return new OrderService(
+                    new RestClient(Configuration["MicroservicAddress:Order:Uri"]));
+            });   
+            
+            services.AddScoped<IPaymentService>(p =>
+            {
+                return new  PaymentService(
+                    new RestClient(Configuration["MicroservicAddress:Payment:Uri"]));
             });
 
         }

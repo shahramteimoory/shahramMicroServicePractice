@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProductService.Infrastructure.Contexts;
+using ProductService.MessagingBus;
+using ProductService.MessagingBus.Config;
 using ProductService.Model.Services;
 using System;
 using System.Collections.Generic;
@@ -41,6 +43,10 @@ namespace ProductService
 
             services.AddTransient<IProductService, ProductService.Model.Services.ProductService>();
             services.AddTransient<ICategoryService, CategoryService>();
+
+            services.Configure<RabbitMQConfig>(Configuration.GetSection("RabbitMQConfig"));
+
+            services.AddTransient<IMessageBus, RabitMQMessageBus>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

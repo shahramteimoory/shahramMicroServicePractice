@@ -13,6 +13,7 @@ namespace ProductService.Model.Services
         List<ProductDto> GetProductList();
         ProductDto GetProduct(Guid Id);
         void AddNewProduct(AddNewProductDto addNewProduct);
+        bool UpdateProduct(UpdateProductDto request);
     }
 
     public class ProductService : IProductService
@@ -83,6 +84,16 @@ namespace ProductService.Model.Services
                  }).ToList();
             return data;
         }
+
+        public bool UpdateProduct(UpdateProductDto request)
+        {
+            var product = context.Products.FirstOrDefault(x=>x.Id==request.productId);
+            if (product is null) return false;
+
+            product.Name = request.Name;
+            context.SaveChanges();
+            return true;
+        }
     }
 
     public class ProductDto
@@ -100,7 +111,7 @@ namespace ProductService.Model.Services
         public string Category { get; set; }
     }
 
-
+    public record UpdateProductDto(Guid productId,string Name);
     public class AddNewProductDto
     {
         public string Name { get; set; }

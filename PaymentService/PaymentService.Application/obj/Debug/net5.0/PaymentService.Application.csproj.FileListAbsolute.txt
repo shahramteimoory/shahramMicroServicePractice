@@ -1,0 +1,16 @@
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\bin\Debug\net5.0\PaymentService.Application.deps.json
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\bin\Debug\net5.0\PaymentService.Application.dll
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\bin\Debug\net5.0\PaymentService.Application.pdb
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\bin\Debug\net5.0\PaymentService.Domain.dll
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\bin\Debug\net5.0\PaymentService.Domain.pdb
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.csproj.AssemblyReference.cache
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.AssemblyInfoInputs.cache
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.AssemblyInfo.cs
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.csproj.CoreCompileInputs.cache
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.sourcelink.json
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentS.03DFC2EE.Up2Date
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.dll
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\refint\PaymentService.Application.dll
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\PaymentService.Application.pdb
+E:\MicroServiceProjects\PaymentService\PaymentService.Application\obj\Debug\net5.0\ref\PaymentService.Application.dll

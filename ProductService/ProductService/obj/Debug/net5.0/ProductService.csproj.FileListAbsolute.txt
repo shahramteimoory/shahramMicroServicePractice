@@ -63,3 +63,6 @@ E:\MicroServiceProjects\ProductService\ProductService\obj\Debug\net5.0\refint\Pr
 E:\MicroServiceProjects\ProductService\ProductService\obj\Debug\net5.0\ProductService.pdb
 E:\MicroServiceProjects\ProductService\ProductService\obj\Debug\net5.0\ProductService.genruntimeconfig.cache
 E:\MicroServiceProjects\ProductService\ProductService\obj\Debug\net5.0\ref\ProductService.dll
+E:\MicroServiceProjects\ProductService\ProductService\bin\Debug\net5.0\RabbitMQ.Client.dll
+E:\MicroServiceProjects\ProductService\ProductService\bin\Debug\net5.0\System.Threading.Channels.dll
+E:\MicroServiceProjects\ProductService\ProductService\obj\Debug\net5.0\ProductService.sourcelink.json

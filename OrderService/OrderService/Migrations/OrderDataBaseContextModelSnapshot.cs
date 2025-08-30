@@ -40,6 +40,9 @@ namespace OrderService.Migrations
                     b.Property<DateTime>("OrderPlaced")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("PaymentStatus")
+                        .HasColumnType("int");
+
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
