@@ -5,5 +5,7 @@
         public const string BasketCheckOut = "BasketCheckOut";
         public const string OrderSendToPayment = "OrderSendToPayment";
         public const string PaymentDone = "PaymentDone";
+        public const string UpdateProductNameExchange = "UpdateProductName";
+        public const string UpdateProductNameQue = "Order_GetMessageUpdateProductName";
     }
 }

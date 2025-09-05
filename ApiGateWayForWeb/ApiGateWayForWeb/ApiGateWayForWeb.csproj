@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+    <PackageReference Include="Ocelot" Version="24.0.1" />
+    <PackageReference Include="Ocelot.Cache.CacheManager" Version="24.0.0" />
+    <PackageReference Include="Ocelot.Provider.Polly" Version="24.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\DiscountService\DiscountService\Proto\discountprotobuff.proto" GrpcServices="Client">
+      <Link>Protos\discountprotobuff.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

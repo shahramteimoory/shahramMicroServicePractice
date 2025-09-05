@@ -50,8 +50,7 @@
               "RelativeToolTip": "ProductService\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-30T21:21:59.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T21:21:59.66Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "ProductService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-30T21:21:54.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T21:21:54.723Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "ProductService\\Startup.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwC4AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T21:21:44.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T21:21:44.707Z"
             },
             {
               "$type": "Document",
@@ -87,7 +84,7 @@
               "RelativeDocumentMoniker": "ProductService\\MessagingBus\\RabitMQMessageBus.cs",
               "ToolTip": "E:\\MicroServiceProjects\\ProductService\\ProductService\\MessagingBus\\RabitMQMessageBus.cs",
               "RelativeToolTip": "ProductService\\MessagingBus\\RabitMQMessageBus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T21:16:20.098Z",
               "EditorCaption": ""
@@ -102,8 +99,7 @@
               "RelativeToolTip": "ProductService\\Constants\\QueNames.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T21:12:43.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T21:12:43.606Z"
             },
             {
               "$type": "Document",
@@ -113,7 +109,7 @@
               "RelativeDocumentMoniker": "ProductService\\Model\\Services\\IProductService.cs",
               "ToolTip": "E:\\MicroServiceProjects\\ProductService\\ProductService\\Model\\Services\\IProductService.cs",
               "RelativeToolTip": "ProductService\\Model\\Services\\IProductService.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAiwHEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T19:47:12.3Z",
               "EditorCaption": ""
@@ -126,7 +122,7 @@
               "RelativeDocumentMoniker": "ProductService\\Controllers\\ProductManagmentController.cs",
               "ToolTip": "E:\\MicroServiceProjects\\ProductService\\ProductService\\Controllers\\ProductManagmentController.cs",
               "RelativeToolTip": "ProductService\\Controllers\\ProductManagmentController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwCYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T19:41:56.54Z",
               "EditorCaption": ""

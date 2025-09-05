@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "E:\\MicroServiceProjects\\OrderService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\messagingbus\\recivedmessage\\recivedordermessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\messagingbus\\recivedmessage\\recivedordermessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\constants\\quenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\constants\\quenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\messagesdto\\basketcheckoutmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\model\\services\\messagesdto\\basketcheckoutmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\messagesdto\\basketitemmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\model\\services\\messagesdto\\basketitemmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\productservices\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\model\\services\\productservices\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\registerorderservices\\iregisterorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\model\\services\\registerorderservices\\iregisterorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\model\\services\\productservices\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\model\\services\\productservices\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{283F2BF0-ADFE-49E1-BA2B-49E0C3F1481C}|OrderService\\OrderService.csproj|e:\\microserviceprojects\\orderservice\\orderservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -39,19 +55,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Startup.cs",
+              "RelativeDocumentMoniker": "OrderService\\Startup.cs",
+              "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Startup.cs",
+              "RelativeToolTip": "OrderService\\Startup.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T22:04:39.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasketItemMessage.cs",
+              "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\MessagesDto\\BasketItemMessage.cs",
+              "RelativeDocumentMoniker": "OrderService\\Model\\Services\\MessagesDto\\BasketItemMessage.cs",
+              "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\MessagesDto\\BasketItemMessage.cs",
+              "RelativeToolTip": "OrderService\\Model\\Services\\MessagesDto\\BasketItemMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T21:59:24.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasketCheckOutMessage.cs",
+              "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\MessagesDto\\BasketCheckOutMessage.cs",
+              "RelativeDocumentMoniker": "OrderService\\Model\\Services\\MessagesDto\\BasketCheckOutMessage.cs",
+              "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\MessagesDto\\BasketCheckOutMessage.cs",
+              "RelativeToolTip": "OrderService\\Model\\Services\\MessagesDto\\BasketCheckOutMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T21:59:11.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QueNames.cs",
+              "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Constants\\QueNames.cs",
+              "RelativeDocumentMoniker": "OrderService\\Constants\\QueNames.cs",
+              "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Constants\\QueNames.cs",
+              "RelativeToolTip": "OrderService\\Constants\\QueNames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T19:56:17.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RecivedOrderMessage.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\MessagingBus\\RecivedMessage\\RecivedOrderMessage.cs",
               "RelativeDocumentMoniker": "OrderService\\MessagingBus\\RecivedMessage\\RecivedOrderMessage.cs",
               "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\MessagingBus\\RecivedMessage\\RecivedOrderMessage.cs",
               "RelativeToolTip": "OrderService\\MessagingBus\\RecivedMessage\\RecivedOrderMessage.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAwwE4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAwwC4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T19:20:47.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T19:20:47.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "OrderPaymentController.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Controllers\\OrderPaymentController.cs",
               "RelativeDocumentMoniker": "OrderService\\Controllers\\OrderPaymentController.cs",
@@ -64,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\IOrderService.cs",
               "RelativeDocumentMoniker": "OrderService\\Model\\Services\\IOrderService.cs",
@@ -72,12 +136,11 @@
               "RelativeToolTip": "OrderService\\Model\\Services\\IOrderService.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAuwGsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T17:04:28.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T17:04:28.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IRegisterOrderService.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\RegisterOrderServices\\IRegisterOrderService.cs",
               "RelativeDocumentMoniker": "OrderService\\Model\\Services\\RegisterOrderServices\\IRegisterOrderService.cs",
@@ -89,19 +152,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IProductServices.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\ProductServices\\IProductServices.cs",
               "RelativeDocumentMoniker": "OrderService\\Model\\Services\\ProductServices\\IProductServices.cs",
               "ToolTip": "E:\\MicroServiceProjects\\OrderService\\OrderService\\Model\\Services\\ProductServices\\IProductServices.cs",
               "RelativeToolTip": "OrderService\\Model\\Services\\ProductServices\\IProductServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowC0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T09:07:17.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\MicroServiceProjects\\OrderService\\OrderService\\appsettings.Development.json",
               "RelativeDocumentMoniker": "OrderService\\appsettings.Development.json",

@@ -1,0 +1,86 @@
+{
+  //https://ocelot.readthedocs.io/en/latest/
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Product",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 15,
+        "Region": "europe-central",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false // my route has GET verb only, assigning 'true' for requests with body: POST, PUT etc.
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Product/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Key": "GetProduct"
+    },
+    //--------------- Category Part -------------------
+    {
+      "DownstreamPathTemplate": "/api/Category",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Category",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    //------------- Managment Product -----------------
+    {
+      "DownstreamPathTemplate": "/api/ProductManagment/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ProductManagment/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], // array of strings
+        "EnableRateLimiting": true,
+        "Limit": 1,
+        "Period": "1s", // seconds, minutes, hours, days
+        "PeriodTimespan": 1 // only seconds
+      },
+      "QoSOptions": { // polly circle
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000, // ms
+        "TimeoutValue": 5000 // ms
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/ProductManagment/id?id={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ProductManagment/id?id={id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

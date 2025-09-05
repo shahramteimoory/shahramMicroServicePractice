@@ -10,11 +10,9 @@ namespace Microservices.Web.Frontend.Services.DiscountServices
     public class DiscountService : IDiscountService
     {
         private readonly GrpcChannel channel;
-        private readonly IConfiguration configuration;
 
         public DiscountService(IConfiguration configuration)
         {
-            this.configuration = configuration;
             string discountServer = configuration["MicroservicAddress:Discount:Uri"];
 
             channel = GrpcChannel.ForAddress(discountServer);

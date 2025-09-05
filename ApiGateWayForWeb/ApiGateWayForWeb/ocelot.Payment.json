@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Pay?OrderId={OrderId}&callbackUrlFront={callbackUrlFront}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Pay?OrderId={OrderId}&callbackUrlFront={callbackUrlFront}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Pay/Verify?paymentId={paymentId}&callbackUrlFront={callbackUrlFront}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Pay/Verify?paymentId={paymentId}&callbackUrlFront={callbackUrlFront}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

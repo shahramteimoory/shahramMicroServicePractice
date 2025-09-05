@@ -8,6 +8,7 @@ namespace OrderService.Model.Services.ProductServices
     public interface IProductServices
     {
         Product GetProduct(PrroductDto prroductDto);
+        bool UpdateProductName(Guid productId,string NewName);
     }
 
     public class ProductService : IProductServices
@@ -24,6 +25,16 @@ namespace OrderService.Model.Services.ProductServices
                 return CreateNewProduct(prroductDto);
 
             return existProduct;
+        }
+
+        public bool UpdateProductName(Guid productId, string NewName)
+        {
+            var product = context.Products.FirstOrDefault(x=>x.ProductId==productId);
+            if (product is null) return false;
+
+            product.Name = NewName;
+            context.SaveChanges();
+            return true;
         }
 
         private Product CreateNewProduct(PrroductDto prroductDto)

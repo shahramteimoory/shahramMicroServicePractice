@@ -64,6 +64,12 @@ namespace Microservices.Web.Frontend
                     new RestClient(Configuration["MicroservicAddress:Payment:Uri"]));
             });
 
+            services.AddScoped<IDiscountService>(p =>
+            {
+                return new DiscountServiceRestful(
+                    new RestClient(Configuration["MicroservicAddress:ApiGateWay:Uri"]));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

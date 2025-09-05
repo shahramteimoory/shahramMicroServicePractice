@@ -1,9 +1,11 @@
 using BasketService.Infrastructure.Contexts;
 using BasketService.Infrastructure.MappingProfile;
 using BasketService.MessagingBus;
+using BasketService.MessagingBus.RecivedMessages.ProductMessages;
 using BasketService.Model.Services;
 using BasketService.Model.Services.BasketServices.MessagesDto;
 using BasketService.Model.Services.DiscountServices;
+using BasketService.Model.Services.ProductServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -33,7 +35,7 @@ namespace BasketService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BasketService", Version = "v1" });
             });
             services.AddDbContext<BasketDataBaseContext>(o => o.UseSqlServer
-            (Configuration["BasketConnection"]));
+            (Configuration["BasketConnection"]),ServiceLifetime.Singleton);
 
             services.AddAutoMapper(typeof(BasketMappingProfile));
 
@@ -43,6 +45,10 @@ namespace BasketService
             services.Configure<RabbitMQConfig>(Configuration.GetSection("RabbitMQConfig"));
 
             services.AddScoped<RabbitMQBus<BasketCheckOutMessage>, RabbitMQMessageBus>();
+
+            services.AddTransient<IProductService, ProductSerrvice>();
+
+            services.AddHostedService<RecivedUpdateProductName>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

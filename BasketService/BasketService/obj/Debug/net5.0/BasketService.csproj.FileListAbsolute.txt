@@ -74,3 +74,4 @@ E:\MicroServiceProjects\BasketService\BasketService\obj\Debug\net5.0\BasketServi
 E:\MicroServiceProjects\BasketService\BasketService\obj\Debug\net5.0\ref\BasketService.dll
 E:\MicroServiceProjects\BasketService\BasketService\bin\Debug\net5.0\RabbitMQ.Client.dll
 E:\MicroServiceProjects\BasketService\BasketService\bin\Debug\net5.0\System.Threading.Channels.dll
+E:\MicroServiceProjects\BasketService\BasketService\obj\Debug\net5.0\BasketService.sourcelink.json
