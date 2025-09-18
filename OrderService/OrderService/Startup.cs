@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +49,13 @@ namespace OrderService
             services.AddTransient<IRegisterOrderService, RegisterOrderService>();
 
             services.AddTransient<RabbitMQBus<SendOrderToPaymentMessage>, RabbitMQOrderToPaymentMessageBus>();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(option =>
+                {
+                    option.Authority = "https://localhost:7036";
+                    option.Audience = "orderservice";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +71,7 @@ namespace OrderService
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

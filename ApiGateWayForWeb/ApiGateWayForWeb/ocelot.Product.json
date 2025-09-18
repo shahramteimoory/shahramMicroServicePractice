@@ -11,13 +11,13 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Product",
-      "UpstreamHttpMethod": [ "GET" ],
-      "FileCacheOptions": {
-        "TtlSeconds": 15,
-        "Region": "europe-central",
-        "Header": "OC-Caching-Control",
-        "EnableContentHashing": false // my route has GET verb only, assigning 'true' for requests with body: POST, PUT etc.
-      }
+      "UpstreamHttpMethod": [ "GET" ]
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 15,
+      //  "Region": "europe-central",
+      //  "Header": "OC-Caching-Control",
+      //  "EnableContentHashing": false // my route has GET verb only, assigning 'true' for requests with body: POST, PUT etc.
+      //}
     },
     {
       "DownstreamPathTemplate": "/api/Product/{id}",
@@ -56,19 +56,19 @@
         }
       ],
       "UpstreamPathTemplate": "/api/ProductManagment/{id}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [], // array of strings
-        "EnableRateLimiting": true,
-        "Limit": 1,
-        "Period": "1s", // seconds, minutes, hours, days
-        "PeriodTimespan": 1 // only seconds
-      },
-      "QoSOptions": { // polly circle
-        "ExceptionsAllowedBeforeBreaking": 3,
-        "DurationOfBreak": 1000, // ms
-        "TimeoutValue": 5000 // ms
-      }
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+      //"RateLimitOptions": {
+      //  "ClientWhitelist": [], // array of strings
+      //  "EnableRateLimiting": true,
+      //  "Limit": 1,
+      //  "Period": "1s", // seconds, minutes, hours, days
+      //  "PeriodTimespan": 1 // only seconds
+      //},
+      //"QoSOptions": { // polly circle
+      //  "ExceptionsAllowedBeforeBreaking": 3,
+      //  "DurationOfBreak": 1000, // ms
+      //  "TimeoutValue": 5000 // ms
+      //}
     },
     {
       "DownstreamPathTemplate": "/api/ProductManagment/id?id={id}",

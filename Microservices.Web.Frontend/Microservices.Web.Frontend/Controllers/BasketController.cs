@@ -2,14 +2,13 @@
 using Microservices.Web.Frontend.Services.BasketServices;
 using Microservices.Web.Frontend.Services.DiscountServices;
 using Microservices.Web.Frontend.Services.ProductServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Microservices.Web.Frontend.Controllers
 {
+    [Authorize]
     public class BasketController : Controller
     {
         private readonly IBasketService basketService;

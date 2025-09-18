@@ -3,6 +3,8 @@ using Microservices.Web.Frontend.Services.DiscountServices;
 using Microservices.Web.Frontend.Services.OrderServices;
 using Microservices.Web.Frontend.Services.PaymentServices;
 using Microservices.Web.Frontend.Services.ProductServices;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -70,6 +72,23 @@ namespace Microservices.Web.Frontend
                     new RestClient(Configuration["MicroservicAddress:ApiGateWay:Uri"]));
             });
 
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+
+            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+            {
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.Authority = "https://localhost:7036";
+                options.ClientId = "webfrontendcode";
+                options.ClientSecret = "123456";
+                options.ResponseType = "code";
+                options.GetClaimsFromUserInfoEndpoint = true;
+                // can add scope if wanna
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -89,7 +108,7 @@ namespace Microservices.Web.Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

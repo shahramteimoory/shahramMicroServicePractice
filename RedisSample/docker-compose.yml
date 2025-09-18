@@ -1,0 +1,10 @@
+services:
+  redisDb:
+    image: redis:alpine
+    ports:
+    - "6379:6379"
+  redissample:
+    image: ${DOCKER_REGISTRY-}redissample
+    build:
+      context: .
+      dockerfile: RedisSample/Dockerfile

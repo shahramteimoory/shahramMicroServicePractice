@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\MicroServiceProjects\\BasketService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|e:\\microserviceprojects\\basketservice\\basketservice\\model\\services\\basketservices\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\model\\services\\basketservices\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|e:\\microserviceprojects\\basketservice\\basketservice\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|e:\\microserviceprojects\\basketservice\\basketservice\\messagingbus\\recivedmessages\\productmessages\\recivedupdateproductname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\messagingbus\\recivedmessages\\productmessages\\recivedupdateproductname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|e:\\microserviceprojects\\basketservice\\basketservice\\messagingbus\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\messagingbus\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|e:\\microserviceprojects\\basketservice\\basketservice\\model\\services\\basketservices\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEBD6C88-4BE1-42D8-B83D-3AA63BEF55CA}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\model\\services\\basketservices\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "BasketService\\Controllers\\BasketController.cs",
+              "ToolTip": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "BasketService\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T23:09:52.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Startup.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Startup.cs",
               "RelativeDocumentMoniker": "BasketService\\Startup.cs",
@@ -54,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RecivedUpdateProductName.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\MessagingBus\\RecivedMessages\\ProductMessages\\RecivedUpdateProductName.cs",
               "RelativeDocumentMoniker": "BasketService\\MessagingBus\\RecivedMessages\\ProductMessages\\RecivedUpdateProductName.cs",
@@ -62,12 +78,11 @@
               "RelativeToolTip": "BasketService\\MessagingBus\\RecivedMessages\\ProductMessages\\RecivedUpdateProductName.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T15:45:07.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T15:45:07.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "QueNames.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Constants\\QueNames.cs",
               "RelativeDocumentMoniker": "BasketService\\Constants\\QueNames.cs",
@@ -79,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RabbitMQMessageBus.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\MessagingBus\\RabbitMQMessageBus.cs",
               "RelativeDocumentMoniker": "BasketService\\MessagingBus\\RabbitMQMessageBus.cs",
@@ -91,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RabbitMQConfig.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\MessagingBus\\RabbitMQConfig.cs",
               "RelativeDocumentMoniker": "BasketService\\MessagingBus\\RabbitMQConfig.cs",
@@ -103,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\appsettings.json",
               "RelativeDocumentMoniker": "BasketService\\appsettings.json",
@@ -115,15 +130,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "BasketService.cs",
               "DocumentMoniker": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Model\\Services\\BasketServices\\BasketService.cs",
               "RelativeDocumentMoniker": "BasketService\\Model\\Services\\BasketServices\\BasketService.cs",
               "ToolTip": "E:\\MicroServiceProjects\\BasketService\\BasketService\\Model\\Services\\BasketServices\\BasketService.cs",
               "RelativeToolTip": "BasketService\\Model\\Services\\BasketServices\\BasketService.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAA3wMEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAA4wMEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T21:31:07.893Z"
+              "WhenOpened": "2025-08-29T21:31:07.893Z",
+              "EditorCaption": ""
             }
           ]
         }
